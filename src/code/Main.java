@@ -6,7 +6,7 @@ public class Main {
 		HermanoMayor hermanoMayor = new HermanoMayor(10);
 		new Thread(hermanoMayor).start();
 		for(int i = 0; i<5; i++) {
-			new Thread(new Alumno(hermanoMayor, "Alumno " + i)).start();
+			new Thread(new Alumno(hermanoMayor, "Alumno " + (i+1))).start();
 		}
 	}
 
